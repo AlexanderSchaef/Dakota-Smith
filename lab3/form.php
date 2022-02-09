@@ -86,23 +86,23 @@
                         <legend>Which Words Describe You?</legend>
                         <p>
                             <label for="chkEmpathetic">Empathetic</label>
-                            <input type="checkbox" id="chkEmpathetic" name="chEmpathetic" value="1">
+                            <input type="checkbox" id="chkEmpathetic" name="chkEmpathetic" value="1">
                         </p>
                         <p>
                             <label for="chkCaring">Caring</label>
-                            <input type="checkbox" id="chkCaring" name="chCaring" value="1">
+                            <input type="checkbox" id="chkCaring" name="chkCaring" value="1">
                         </p>
                         <p>
                             <label for="chkOpenMinded">Open Minded</label>
-                            <input type="checkbox" id="chkOpenMinded" name="chOpenMinded" value="1">
+                            <input type="checkbox" id="chkOpenMinded" name="chkOpenMinded" value="1">
                         </p>
                         <p>
                             <label for="chkApproachable">Approachable</label>
-                            <input type="checkbox" id="chkApproachable" name="chApproachable" value="1">
+                            <input type="checkbox" id="chkApproachable" name="chkApproachable" value="1">
                         </p>
                     </fieldset>
                     <fieldset class="textarea">
-                        <legend>Would Do You Think We Should Be Kind?</legend>
+                        <legend>Why Do You Think We Should Be Kind?</legend>
                         <p>
                             <label for="txtWhyKind">Tell us what you're thinking</label>
                             <textarea id="txtWhyKind" name="txtWhyKind"></textarea>
