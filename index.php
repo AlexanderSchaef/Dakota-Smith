@@ -31,7 +31,7 @@
             <section class="supporting-files">
                 <h3>Supporting files</h3>
                 <p><a href="lab3/css/custom.css">custom.css</a></p>
-                <p><a href="lab3/wireframe.png">wireframe</a></p>
+                <p><a href="lab3/images/wireframe.png">wireframe</a></p>
             </section>
 
             <section class="grader-notes">
