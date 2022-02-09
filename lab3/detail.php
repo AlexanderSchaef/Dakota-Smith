@@ -23,10 +23,10 @@
         </nav>
         <main>
             <h1>Kind People</h1>
-            <section style="height: 650px">
+            <section>
             <h2>Rosa Parks</h2>
-                <figure style="float:left; text-align: center; width: 20%;">
-                    <img alt="Rosa Parks" src="images/rosa-parks.jpg" style="max-width: 100%;">
+                <figure>
+                    <img alt="Rosa Parks" src="images/rosa-parks.jpg">
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Rosa_Parks" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p>Rosa Parks is an activist best known for her role in the Montgomery bus boycott. Parks refused to let 
@@ -38,10 +38,10 @@
                 <cite><a href="https://en.wikipedia.org/wiki/Rosa_Parks">Source</a></cite>
             </section>
 
-            <section style="height: 650px">
+            <section>
             <h2>Gandhi</h2>
-                <figure style="float:left; text-align: center; width: 20%;">
-                    <img alt="Gandhi" src="images/gandhi.jpg" style="max-width: 100%;">
+                <figure>
+                    <img alt="Gandhi" src="images/gandhi.jpg">
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p>Mahatma Gandhi was an Indian lawyer who inspired civil rights movements across the globe. After graduating 
@@ -54,10 +54,10 @@
                 </p> 
                 <cite><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">Source</a></cite>
             </section>
-            <section style="height: 550px">
+            <section>
             <h2>Mother Teresa</h2>
-                <figure style="float:left; text-align: center; width: 20%;">
-                    <img alt="Mother Teresa" src="images/mother-teresa.jpg" style="max-width: 100%;">
+                <figure>
+                    <img alt="Mother Teresa" src="images/mother-teresa.jpg">
                     <figcaption><cite><a href="https://mtces.org/about/why-were-called-mother-teresa" target="_blank">MTCES</a></cite></figcaption>
                 </figure>
                 <p>Mother Teresa was a Roman Catholic nun and missionary. She founded the Missionaries of Charity,
@@ -68,10 +68,10 @@
                 </p> 
                 <cite><a href="https://en.wikipedia.org/wiki/Mother_Teresa">Source</a></cite>
             </section>
-            <section style="height: 700px">
+            <section>
                 <h2>Ellen DeGeneres</h2>
-                <figure style="float:left; text-align: center; width: 20%;">
-                    <img alt="Ellen DeGeneres" src="images/ellen.jpg" style="max-width: 100%;">
+                <figure>
+                    <img alt="Ellen DeGeneres" src="images/ellen.jpg">
                     <figcaption><cite><a href="https://www.vanityfair.com/hollywood/2021/05/ellen-degeneres-is-ending-ellen-in-2022" target="_blank">Vanity Fair</a></cite></figcaption>
                 </figure>
                 <p>Ellen DeGeneres advocates for kindness in everyday life. She has raised tens of millions of dollars

@@ -22,11 +22,11 @@
             <a href="form.php">Survey</a>
         </nav>
         <main>
-            <h1 style="text-align: center;">Acts of Kindness</h1>
+            <h1>Acts of Kindness</h1>
             <section>
-                <h2 style="text-align: center;">Why Spread Kindness?</h2>
-                <figure style="float:left; text-align: center; width: 20%;">
-                    <img alt="Kids sharing juicebox" src="images/kindness.jpg" style="max-width: 100%;">
+                <h2>Why Spread Kindness?</h2>
+                <figure>
+                    <img alt="Kids sharing juicebox" src="images/kindness.jpg">
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Kindness" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
                 <p>In the chaos of today, the world needs a little more kindness. Being in a global
