@@ -24,8 +24,8 @@
             <section class="public-files">
                 <h3>Public Files</h3>
                 <p><a href="lab3/index.php">index.php</a></p>
-                <p><a href="lab3/detail.php">index.php</a></p>
-                <p><a href="lab3/form.php">index.php</a></p>
+                <p><a href="lab3/detail.php">detail.php</a></p>
+                <p><a href="lab3/form.php">form.php</a></p>
             </section>
 
             <section class="supporting-files">
