@@ -20,6 +20,27 @@
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         
         <section class="grid-layout">
+            <h2 class="header">Lab Four - Styling Your Site.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="lab4/index.php">index.php</a></p>
+                <p><a href="lab4/detail.php">detail.php</a></p>
+                <p><a href="lab4/form.php">form.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="lab4/css/custom.css">custom.css</a></p>
+                <p><a href="lab4/images/wireframe.png">wireframe</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section> 
+        </section>
+
+        <section class="grid-layout">
             <h2 class="header">Lab Three - Adding detail and a form.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
