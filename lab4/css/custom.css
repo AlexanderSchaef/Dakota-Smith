@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: #FFFFFF;
-    --main-bg-color-rgba: rgba(255, 255, 255, .10);
+    --main-bg-color-rgba: rgba(0, 0, 0, .55);
     --nav-bg-color-rgba: rgba(100, 150, 255, .25);
     --main-text-color: white;
     --background-odd: #FFFFFF;
@@ -121,6 +121,32 @@ p {
 }
 section {
     overflow: auto;
+}
+
+ul li {
+    margin: 1em;
+}
+
+/* form styling */
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: thin solid black;
+    clear: both;
+    max-width: 30em;
+    margin: auto;
+    padding: 5%;
+}
+
+form p {
+    text-indent: 0;
+}
+
+fieldset {
+    padding: 5%;
+}
+
+legend {
+    margin-top: 1%;
 }
 
 /* table styling */
