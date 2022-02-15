@@ -23,14 +23,14 @@
         </nav>
         <main>
             <section class="header-img">
+                <h2>Why Do You Think We Should be Kind?</h2>
                 <figure class="rounded border go-left" hidden>
                     <img class="rounded" alt="Protest" src="images/banner-image.jpg">
                     <figcaption><cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite></figcaption>
                 </figure>
-                <h1>Why Do You Think We Should be Kind?</h1>
             </section>
-            <cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite>
             <section>
+                <cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite>
                 <h2>Survey</h2>
                 <p>We are collecting information on why people think that we should be kind</p>
             </section>
