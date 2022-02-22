@@ -119,12 +119,44 @@ p {
     text-indent: 3em;
     padding-bottom: 1em;
 }
+
 section {
     overflow: auto;
 }
 
 ul li {
     margin: 1em;
+}
+
+/* grid layout */
+
+.grid-layout main {
+    display: grid;
+    grid-template-areas: 
+        "page-heading page-heading"
+        "spread-kindness kindness-examples" 
+        "compliment-table compliment-table";
+    grid-template-columns: auto 25%;
+    grid-gap: 2%;
+}
+
+.grid-layout main:first-child {
+    grid-area: page-heading;
+}
+
+.grid-layout .spread-kindness {
+    grid-area: spread-kindness;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
+.grid-layout .kindness-examples {
+    grid-area: kindness-examples;
+}
+
+.grid-layout .compliment-table {
+    grid-area: compliment-table;
+    margin-bottom: 1em;
 }
 
 /* form styling */
@@ -149,21 +181,10 @@ legend {
     margin-top: 1%;
 }
 
-li {
-    color: black;
-}
-
-li:nth-child(even) {
-    background-color: var(--background-even);
-}
-
-li:nth-child(odd) {
-    background-color: var(--background-odd);
-}
 
 /* table styling */
 table {
-    border: medium solid black;
+    border: medium solid white;
     border-collapse: collapse;
     max-width: 80%;
     margin: auto;
@@ -171,23 +192,16 @@ table {
 
 td,
 th {
-    border: thin solid black;
+    border: thin solid white;
     padding: .5em;
-    color: black;
-}
-
-tr:nth-child(odd) {
-    background-color: var(--background-odd);
-}
-
-tr:nth-child(even) {
-    background-color: var(--background-even);
 }
 
 caption {
     font-weight: bold;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
+
 /* css classes */
 .header-img {
     width: 100%;
@@ -219,4 +233,3 @@ caption {
 .border {
     border: thin solid white;
 }
-
