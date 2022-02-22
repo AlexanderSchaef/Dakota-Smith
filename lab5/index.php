@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
     </head>
 
-    <body class="if-needed">
+    <body class="grid-layout">
         <header>
             <!-- logo image would go here -->
             <h1>Spread Kindness</h1>
@@ -23,7 +23,7 @@
         </nav>
         <main>
             <h1>Acts of Kindness</h1>
-            <section>
+            <section class="spread-kindness"> 
                 <h2>Why Spread Kindness?</h2>
                 <figure class="rounded border go-left">
                     <img class="rounded" alt="Kids sharing juicebox" src="images/kindness.jpg">
@@ -48,7 +48,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="kindness-examples">
                 <h2>Examples of Kindness</h2>
                 <ul>
                     <li>Giving someone a compliment</li>
@@ -59,7 +59,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="compliment-table">
                 <h2>Compliment Ideas</h2>
                 <table>
                     <caption>Some Topics to Consider</caption>
