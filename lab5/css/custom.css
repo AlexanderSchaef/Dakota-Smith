@@ -130,7 +130,7 @@ ul li {
     margin: 1em;
 }
 
-/* grid layout */
+/* grid layout for index */
 .grid-layout main {
     display: grid;
     grid-template-areas: 
@@ -214,11 +214,12 @@ ul li {
 
 form {
     background-color: var(--main-bg-color-rgba);
-    border: thin solid black;
+    border: 2px white groove;
     clear: both;
-    max-width: 30em;
+    max-width: 100%;
     margin: auto;
     padding: 5%;
+    font-size: large;
 }
 
 form p {
@@ -227,12 +228,89 @@ form p {
 
 fieldset {
     padding: 5%;
+    border: none;
 }
 
 legend {
     margin-top: 1%;
 }
 
+label {
+    display: block;
+}
+
+.radio label,
+.checkbox label {
+    display: inline;
+}
+
+.radio input,
+.checkbox input {
+    width: initial;
+}
+
+.radio legend,
+.checkbox legend,
+.contact legend, 
+.textarea legend {
+    padding-top: 1.5em;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+select {   
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 3px;
+}
+
+select {
+    padding: 3px;
+}
+
+input[type="submit"] {
+    background: rgb(48, 77, 141);
+    color: whitesmoke;
+    font-size: large;
+    padding: 2%;
+    width: 100%;  
+}
+
+input[type="submit"]:hover {
+    background: rgb(15, 36, 82);
+}
+
+/* form grid layout */
+
+.form-page main {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.form-page main:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.form-page .actual-form {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    max-width: 70%;
+
+}
+
+.form-page .form-feedback {
+    grid-column: 2;
+    grid-row: 4/ span 2;
+}
 
 /* table styling */
 table {
@@ -256,12 +334,13 @@ caption {
 
 /* css classes */
 .header-img {
-    width: 100%;
+    width: 80%;
     height: 20em;
     background: url(../images/banner-image.jpg);
     background-size: cover;
     background-position: center;
     background-color:rgba(255, 255, 255, .10);
+    margin: 0 auto;
 }
 
 .main {
