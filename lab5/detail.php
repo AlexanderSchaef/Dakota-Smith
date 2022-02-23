@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
     </head>
 
-    <body class="if-needed">
+    <body class="flexbox-layout">
         <header>
             <!-- logo image would go here -->
             <h1>Spread Kindness</h1>
@@ -23,12 +23,15 @@
         </nav>
         <main>
             <h1>Kind People</h1>
-            <section>
-            <h2>Rosa Parks</h2>
-                <figure class="rounded border go-left">
-                    <img class="rounded" alt="Rosa Parks" src="images/rosa-parks.jpg">
+            <section class="rosa-parks-image">
+                <h2>Rosa Parks</h2>
+                <figure>
+                    <img alt="Rosa Parks" src="images/rosa-parks.jpg">
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Rosa_Parks" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
+            </section>
+            
+            <section class="rosa-parks-text">
                 <p>Rosa Parks is an activist best known for her role in the Montgomery bus boycott. Parks refused to let 
                     the bus driver change a row of four "colored" section seats into one for a white passenger. This led 
                     to a movement against racial segregation. Later in her life, Parks organized the release of political prisoners, 
@@ -38,12 +41,15 @@
                 <cite><a href="https://en.wikipedia.org/wiki/Rosa_Parks">Source</a></cite>
             </section>
 
-            <section>
+            <section class="gandhi-image">
             <h2>Gandhi</h2>
-                <figure class="rounded border go-right">
-                    <img class="rounded" alt="Gandhi" src="images/gandhi.jpg">
+                <figure>
+                    <img alt="Gandhi" src="images/gandhi.jpg">
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
+            </section>
+            
+            <section class="gandhi-text">
                 <p>Mahatma Gandhi was an Indian lawyer who inspired civil rights movements across the globe. After graduating 
                     high school in India, he had a child with his wife Kasturba. Gandhi was advised to pursue law school in 
                     London, but his mother did not approve of him leaving his wife and child. So, he made a vow to abstain from 
@@ -54,12 +60,16 @@
                 </p> 
                 <cite><a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">Source</a></cite>
             </section>
-            <section>
+
+            <section class="mother-teresa-image">
             <h2>Mother Teresa</h2>
-                <figure class="rounded border go-left">
-                    <img class="rounded" alt="Mother Teresa" src="images/mother-teresa.jpg">
+                <figure>
+                    <img alt="Mother Teresa" src="images/mother-teresa.jpg">
                     <figcaption><cite><a href="https://mtces.org/about/why-were-called-mother-teresa" target="_blank">MTCES</a></cite></figcaption>
                 </figure>
+            </section>
+
+            <section class="mother-teresa-text">
                 <p>Mother Teresa was a Roman Catholic nun and missionary. She founded the Missionaries of Charity,
                     a congregation that manages homes for people who are dying of HIV/AIDS, leprosy, and tuberculosis. The members of 
                     this congregation take a vow to give "wholehearted free service to the poorest of the poor." She went on 
@@ -68,12 +78,16 @@
                 </p> 
                 <cite><a href="https://en.wikipedia.org/wiki/Mother_Teresa">Source</a></cite>
             </section>
-            <section>
+
+            <section class="ellen-degeneres-image">
                 <h2>Ellen DeGeneres</h2>
-                <figure class="rounded border go-right">
-                    <img class="rounded" alt="Ellen DeGeneres" src="images/ellen.jpg">
+                <figure class="go-right">
+                    <img alt="Ellen DeGeneres" src="images/ellen.jpg">
                     <figcaption><cite><a href="https://www.vanityfair.com/hollywood/2021/05/ellen-degeneres-is-ending-ellen-in-2022" target="_blank">Vanity Fair</a></cite></figcaption>
                 </figure>
+            </section>
+
+            <section class="ellen-degeneres-text">
                 <p>Ellen DeGeneres advocates for kindness in everyday life. She has raised tens of millions of dollars
                     for various causes over the years, including:
                 </p> 
@@ -93,6 +107,7 @@
                 <cite><a href="https://www.bekindbyellen.com/">Source</a></cite>    
             </section>
         </main>
+
         <footer>
             <p><a href="../index.php">Site map (Main index)</a></p>
         </footer> 
