@@ -13,7 +13,8 @@
     font-family: "Clarkson", Verdana, sans-serif;
 }
 
-main, 
+main,
+section, 
 article,  
 aside, 
 h1, 
@@ -120,16 +121,16 @@ p {
     padding-bottom: 1em;
 }
 
-section {
+/* section {
     overflow: auto;
 }
+*/
 
 ul li {
     margin: 1em;
 }
 
 /* grid layout */
-
 .grid-layout main {
     display: grid;
     grid-template-areas: 
@@ -159,7 +160,58 @@ ul li {
     margin-bottom: 1em;
 }
 
+/* flexbox layout */
+.flexbox-layout main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.flexbox-layout main h1 {
+    flex: 1 0 100%;
+}
+
+.flexbox-layout figure {
+    width: 100%;
+}
+
+.flexbox-layout .rosa-parks-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .rosa-parks-text {
+    flex: 1 1 55%;
+    
+}
+
+.flexbox-layout .gandhi-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .gandhi-text {
+    flex: 1 1 55%;
+}
+
+.flexbox-layout .mother-teresa-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .mother-teresa-text {
+    flex: 1 1 55%;
+}
+
+.flexbox-layout .ellen-degeneres-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .ellen-degeneres-text {
+    flex: 1 1 55%;
+}
+
 /* form styling */
+
 form {
     background-color: var(--main-bg-color-rgba);
     border: thin solid black;
