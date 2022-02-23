@@ -30,8 +30,9 @@
                     <figcaption><cite><a href="https://en.wikipedia.org/wiki/Rosa_Parks" target="_blank">Wikipedia</a></cite></figcaption>
                 </figure>
             </section>
-            
+
             <section class="rosa-parks-text">
+                <h2>About Rosa</h2>
                 <p>Rosa Parks is an activist best known for her role in the Montgomery bus boycott. Parks refused to let 
                     the bus driver change a row of four "colored" section seats into one for a white passenger. This led 
                     to a movement against racial segregation. Later in her life, Parks organized the release of political prisoners, 
@@ -50,6 +51,7 @@
             </section>
             
             <section class="gandhi-text">
+                <h2>About Gandhi</h2>
                 <p>Mahatma Gandhi was an Indian lawyer who inspired civil rights movements across the globe. After graduating 
                     high school in India, he had a child with his wife Kasturba. Gandhi was advised to pursue law school in 
                     London, but his mother did not approve of him leaving his wife and child. So, he made a vow to abstain from 
@@ -70,6 +72,7 @@
             </section>
 
             <section class="mother-teresa-text">
+                <h2>About Mother Teresa</h2>
                 <p>Mother Teresa was a Roman Catholic nun and missionary. She founded the Missionaries of Charity,
                     a congregation that manages homes for people who are dying of HIV/AIDS, leprosy, and tuberculosis. The members of 
                     this congregation take a vow to give "wholehearted free service to the poorest of the poor." She went on 
@@ -88,6 +91,7 @@
             </section>
 
             <section class="ellen-degeneres-text">
+                <h2>About Ellen</h2>
                 <p>Ellen DeGeneres advocates for kindness in everyday life. She has raised tens of millions of dollars
                     for various causes over the years, including:
                 </p> 

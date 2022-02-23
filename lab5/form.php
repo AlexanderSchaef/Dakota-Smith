@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
     </head>
 
-    <body class="if-needed">
+    <body class="form-page">
         <header>
             <!-- logo image would go here -->
             <h1>Spread Kindness</h1>
@@ -21,21 +21,17 @@
             <a href="detail.php">Kind&nbsp;People</a>
             <a href="form.php">Survey</a>
         </nav>
-        <main>
-            <section class="header-img">
+        <section class="header-img">
                 <h2>Why Do You Think We Should be Kind?</h2>
-                <figure class="rounded border go-left" hidden>
-                    <img class="rounded" alt="Protest" src="images/banner-image.jpg">
-                    <figcaption><cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite></figcaption>
-                </figure>
-            </section>
+        </section>
+        <main>
             <section>
                 <cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite>
                 <h2>Survey</h2>
                 <p>We are collecting information on why people think that we should be kind</p>
             </section>
 
-            <section>
+            <section class="actual-form">
                 <h2>We are curious about your responses</h2>
                 <?php
                 print '<p>Post Array:</p><pre>';
@@ -57,27 +53,27 @@
                     <fieldset class="radio">
                         <legend>Have You Been Bullied?</legend>
                         <p>
-                            <label class="radio-field" for="radBeenBulliedYes">Yes</label>
                             <input type="radio" id="radBeenBulliedYes" name="radBeenBullied" value="Yes" required>
+                            <label class="radio-field" for="radBeenBulliedYes">Yes</label> 
                         </p> 
                         <p>
-                            <label class="radio-field" for="radBeenBulliedNo">No</label>
                             <input type="radio" id="radBeenBulliedNo" name="radBeenBullied" value="No" required>
+                            <label class="radio-field" for="radBeenBulliedNo">No</label>
                         </p>
                     </fieldset>
                     <fieldset class="radio">
                         <legend>Have You Bullied Someone Else?</legend>
                         <p>
-                            <label class="radio-field" for="radBulliedYes">Yes</label>
                             <input type="radio" id="radBulliedYes" name="radBullied" value="Yes" required>
+                            <label class="radio-field" for="radBulliedYes">Yes</label>
                         </p> 
                         <p>
+                            <input type="radio" id="radBulliedNo" name="radBullied" value="No" required>    
                             <label class="radio-field" for="radBeenBulliedNo">No</label>
-                            <input type="radio" id="radBulliedNo" name="radBullied" value="No" required>
                         </p>
                         <p>
-                            <label class="radio-field" for="radBulliedPrefer">Prefer not to answer</label>
                             <input type="radio" id="radBulliedPrefer" name="radBullied" value="Prefer" required>
+                            <label class="radio-field" for="radBulliedPrefer">Prefer not to answer</label>
                         </p>  
                     </fieldset>
                     <fieldset class="listbox">
@@ -93,27 +89,27 @@
                     <fieldset class="checkbox">
                         <legend>Which Words Describe You?</legend>
                         <p>
-                            <label for="chkEmpathetic">Empathetic</label>
                             <input type="checkbox" id="chkEmpathetic" name="chkEmpathetic" value="1">
+                            <label for="chkEmpathetic">Empathetic</label>    
                         </p>
                         <p>
-                            <label for="chkCaring">Caring</label>
                             <input type="checkbox" id="chkCaring" name="chkCaring" value="1">
+                            <label for="chkCaring">Caring</label>    
                         </p>
                         <p>
-                            <label for="chkOpenMinded">Open Minded</label>
                             <input type="checkbox" id="chkOpenMinded" name="chkOpenMinded" value="1">
+                            <label for="chkOpenMinded">Open Minded</label>
                         </p>
                         <p>
-                            <label for="chkApproachable">Approachable</label>
                             <input type="checkbox" id="chkApproachable" name="chkApproachable" value="1">
+                            <label for="chkApproachable">Approachable</label>    
                         </p>
                     </fieldset>
                     <fieldset class="textarea">
                         <legend>Why Do You Think We Should Be Kind?</legend>
                         <p>
                             <label for="txtWhyKind">Tell us what you're thinking</label>
-                            <textarea id="txtWhyKind" name="txtWhyKind"></textarea>
+                            <textarea id="txtWhyKind" name="txtWhyKind" rows="4"></textarea>
                         </p>
                     </fieldset>
                     <fieldset class="button">
@@ -121,11 +117,14 @@
                             <input id="btnSubmit" name="btnSubmit" type="submit" value="Submit">
                         </p>
                     </fieldset>
-
                 </form>
             </section>
 
+            <section class="form-feedback">
+                <h2>Thank you</h2>
+            </section>
         </main>
+
         <footer>
             <p><a href="../index.php">Site map (Main index)</a></p>
         </footer> 
