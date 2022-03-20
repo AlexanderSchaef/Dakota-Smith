@@ -1,1 +1,366 @@
+:root {
+    --main-bg-color: #FFFFFF;
+    --main-bg-color-rgba: rgba(0, 0, 0, .55);
+    --nav-bg-color-rgba: rgba(100, 150, 255, .25);
+    --main-text-color: white;
+    --background-odd: #FFFFFF;
+    --background-even: #006994;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Clarkson", Verdana, sans-serif;
+}
+
+main,
+section, 
+article,  
+aside, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+nav,
+footer {
+    padding: 1%;
+}
+
+body {
+    padding: 4%;
+}
+
+html {
+    background-image: url(../images/node-background.png);
+    /* source: https://coolbackgrounds.io/black-background/ */
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);   
+}
+
+nav, footer {
+    background-color: var(--nav-bg-color-rgba);
+    text-align: center;
+    width: 80%;
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+header {
+    width: 80%;
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+/* nav styling*/
+nav a:link {
+    background-color: rgba(75, 175, 240, .99);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
+    background-color: rgb(0, 150, 240);
+}
+
+nav a {
+    display: inline-block;
+    padding: 1%;
+    width: 30%;
+}
+
+nav {
+    border: thin solid white;
+    background-color: rgba(255,255,255,.1);
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+main {
+    background-color: var(--main-bg-color-rgba);
+    width: 80%;
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+/* general syling */
+a:hover {
+    background-color: var(--main-bg-color-rgba);
+    color: blanchedalmond;
+}
+
+footer a, main a {
+    color: rgba(75, 175, 240, .99);
+}
+cite {
+    font-size: xx-small;
+}
+
+figure {
+    text-align: center;
+    width: 20%;
+    margin-top: 1em;
+}
+
+figcaption{
+    padding-bottom: .5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 3em;
+    padding-bottom: 1em;
+}
+
+/* section {
+    overflow: auto;
+}
+*/
+
+ul li {
+    margin: 1em;
+}
+
+/* grid layout for index */
+.grid-layout main {
+    display: grid;
+    grid-template-areas: 
+        "page-heading page-heading"
+        "spread-kindness kindness-examples" 
+        "compliment-table compliment-table";
+    grid-template-columns: auto 25%;
+    grid-gap: 2%;
+}
+
+.grid-layout main:first-child {
+    grid-area: page-heading;
+}
+
+.grid-layout .spread-kindness {
+    grid-area: spread-kindness;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
+.grid-layout .kindness-examples {
+    grid-area: kindness-examples;
+}
+
+.grid-layout .compliment-table {
+    grid-area: compliment-table;
+    margin-bottom: 1em;
+}
+
+/* flexbox layout */
+.flexbox-layout main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.flexbox-layout main h1 {
+    flex: 1 0 100%;
+}
+
+.flexbox-layout figure {
+    width: 100%;
+}
+
+.flexbox-layout .rosa-parks-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .rosa-parks-text {
+    flex: 1 1 55%;
+    
+}
+
+.flexbox-layout .gandhi-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .gandhi-text {
+    flex: 1 1 55%;
+}
+
+.flexbox-layout .mother-teresa-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .mother-teresa-text {
+    flex: 1 1 55%;
+}
+
+.flexbox-layout .ellen-degeneres-image {
+    flex: 1 1 35%;
+}
+
+.flexbox-layout .ellen-degeneres-text {
+    flex: 1 1 55%;
+}
+
+/* form styling */
+
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: 2px white groove;
+    clear: both;
+    max-width: 100%;
+    margin: auto;
+    padding: 5%;
+    font-size: large;
+}
+
+form p {
+    text-indent: 0;
+}
+
+fieldset {
+    padding: 5%;
+    border: none;
+}
+
+legend {
+    margin-top: 1%;
+}
+
+label {
+    display: block;
+}
+
+.radio label,
+.checkbox label {
+    display: inline;
+}
+
+.radio input,
+.checkbox input {
+    width: initial;
+}
+
+.radio legend,
+.checkbox legend,
+.contact legend, 
+.textarea legend {
+    padding-top: 1.5em;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+select {   
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 3px;
+}
+
+select {
+    padding: 3px;
+}
+
+input[type="submit"] {
+    background: rgb(48, 77, 141);
+    color: whitesmoke;
+    font-size: large;
+    padding: 2%;
+    width: 100%;  
+}
+
+input[type="submit"]:hover {
+    background: rgb(15, 36, 82);
+}
+
+/* form grid layout */
+
+.form-page main {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.form-page main:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.form-page .actual-form {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    max-width: 70%;
+
+}
+
+.form-page .form-feedback {
+    grid-column: 2;
+    grid-row: 4/ span 2;
+}
+
+/* table styling */
+table {
+    border: medium solid white;
+    border-collapse: collapse;
+    max-width: 80%;
+    margin: auto;
+}
+
+td,
+th {
+    border: thin solid white;
+    padding: .5em;
+}
+
+caption {
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* css classes */
+.header-img {
+    width: 80%;
+    height: 20em;
+    background: url(../images/banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(255, 255, 255, .10);
+    margin: 0 auto;
+}
+
+.main {
+    width:90%;
+    max-width: 1em;
+}
+.rounded {
+    border-radius: 2%;
+}
+
+.go-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.go-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.border {
+    border: thin solid white;
+}
