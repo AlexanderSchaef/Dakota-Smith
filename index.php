@@ -90,6 +90,27 @@
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         
         <section class="grid-layout">
+            <h2 class="header">Lab Six - Responsive Design.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="lab6/index.php">index.php</a></p>
+                <p><a href="lab6/detail.php">detail.php</a></p>
+                <p><a href="lab6/form.php">form.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="lab6/css/custom.css">custom.css</a></p>
+                <p><a href="lab6/images/wireframe.png">wireframe</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section> 
+        </section>
+
+        <section class="grid-layout">
             <h2 class="header">Lab Five - Adding more style.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
@@ -175,6 +196,7 @@
             <section class="public-files">
                 <h3>Public Files</h3>
                 <p><a href="testing.php">Testing Page</a></p>
+            </section>
             <section class="grader-notes">
                 <h3>Notes to grader</h3>
                 <p></p>
