@@ -7,10 +7,13 @@
         <meta name="description" content="In the chaos of today's world, 
         spreading acts of kindness can make a positive impact, learn more here.">
         <!-- Description is 107 characters, tries to promote a call to action -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
+        <link rel="stylesheet" media="(max-width: 800px)" href="css/custom-tablet.css?version=<?php print time(); ?>" type="text/css">
+        <link rel="stylesheet" media="(max-width: 600px)" href="css/custom-phone.css?version=<?php print time(); ?>" type="text/css">
     </head>
 
-    <body class="flexbox-layout">
+    <body class="detail">
         <header>
             <!-- logo image would go here -->
             <h1>Spread Kindness</h1>
@@ -21,7 +24,7 @@
             <a href="detail.php">Kind&nbsp;People</a>
             <a href="form.php">Survey</a>
         </nav>
-        <main>
+        <main class="details">
             <h1>Kind People</h1>
             <section class="rosa-parks-image">
                 <h2>Rosa Parks</h2>
@@ -84,7 +87,7 @@
 
             <section class="ellen-degeneres-image">
                 <h2>Ellen DeGeneres</h2>
-                <figure class="go-right">
+                <figure>
                     <img alt="Ellen DeGeneres" src="images/ellen.jpg">
                     <figcaption><cite><a href="https://www.vanityfair.com/hollywood/2021/05/ellen-degeneres-is-ending-ellen-in-2022" target="_blank">Vanity Fair</a></cite></figcaption>
                 </figure>

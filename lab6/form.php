@@ -7,10 +7,13 @@
         <meta name="description" content="In the chaos of today's world, 
         spreading acts of kindness can make a positive impact, learn more here.">
         <!-- Description is 107 characters, tries to promote a call to action -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
+        <link rel="stylesheet" media="(max-width: 800px)" href="css/custom-tablet.css?version=<?php print time(); ?>" type="text/css">
+        <link rel="stylesheet" media="(max-width: 600px)" href="css/custom-phone.css?version=<?php print time(); ?>" type="text/css">
     </head>
 
-    <body class="form-page">
+    <body class="form">
         <header>
             <!-- logo image would go here -->
             <h1>Spread Kindness</h1>
