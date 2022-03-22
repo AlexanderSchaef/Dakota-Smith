@@ -104,7 +104,7 @@ cite {
 
 figure {
     text-align: center;
-    width: 20%;
+    width: 40%;
     margin-top: 1em;
 }
 
@@ -131,83 +131,75 @@ ul li {
 }
 
 /* grid layout for index */
-.grid-layout main {
+main {
     display: grid;
     grid-template-areas: 
         "page-heading page-heading"
-        "spread-kindness kindness-examples" 
-        "compliment-table compliment-table";
+        "section-one section-two" 
+        "section-three section-three";
     grid-template-columns: auto 25%;
-    grid-gap: 2%;
 }
 
-.grid-layout main:first-child {
+main h1:first-child {
     grid-area: page-heading;
 }
 
-.grid-layout .spread-kindness {
-    grid-area: spread-kindness;
+.spread-kindness {
+    grid-area: section-one;
     padding-bottom: 0;
     margin-bottom: 1em;
 }
 
-.grid-layout .kindness-examples {
-    grid-area: kindness-examples;
+.kindness-examples {
+    grid-area: section-two;
 }
 
-.grid-layout .compliment-table {
-    grid-area: compliment-table;
+.compliment-table {
+    grid-area: section-three;
     margin-bottom: 1em;
 }
 
-/* flexbox layout */
-.flexbox-layout main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em;
-    align-items: center;
+main.details {
+    display: grid;
+    grid-template-areas: 
+        "page-heading page-heading"
+        "section-one section-two"
+        "section-three section-four"
+        "section-five section-six"
+        "section-seven section-eight";
+    grid-template-columns: auto auto;
+    row-gap: 1em;
+}
+.rosa-parks-image {
+    grid-area: section-one;
 }
 
-.flexbox-layout main h1 {
-    flex: 1 0 100%;
+.rosa-parks-text {
+    grid-area: section-two; 
 }
 
-.flexbox-layout figure {
-    width: 100%;
+.gandhi-image {
+    grid-area: section-four;
 }
 
-.flexbox-layout .rosa-parks-image {
-    flex: 1 1 35%;
+.gandhi-text {
+    grid-area: section-three;
 }
 
-.flexbox-layout .rosa-parks-text {
-    flex: 1 1 55%;
-    
+.mother-teresa-image {
+    grid-area: section-five;
 }
 
-.flexbox-layout .gandhi-image {
-    flex: 1 1 35%;
+.mother-teresa-text {
+    grid-area: section-six;
 }
 
-.flexbox-layout .gandhi-text {
-    flex: 1 1 55%;
+.ellen-degeneres-image {
+    grid-area: section-eight;
 }
 
-.flexbox-layout .mother-teresa-image {
-    flex: 1 1 35%;
-}
-
-.flexbox-layout .mother-teresa-text {
-    flex: 1 1 55%;
-}
-
-.flexbox-layout .ellen-degeneres-image {
-    flex: 1 1 35%;
-}
-
-.flexbox-layout .ellen-degeneres-text {
-    flex: 1 1 55%;
+.ellen-degeneres-text {
+    grid-area: section-seven;
 }
 
 /* form styling */
@@ -290,33 +282,30 @@ input[type="submit"]:hover {
 
 /* form grid layout */
 
-.form-page main {
+.form main {
     display: grid;
     grid-template-columns: 30% auto;
 }
 
-.form-page main:first-child {
+.form main:first-child {
     grid-column: 1 / span 2;
-    grid-row: 1;
 }
 
-.form-page .actual-form {
+.form .actual-form {
     grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
     max-width: 70%;
-
+    margin: 0 auto;
 }
 
-.form-page .form-feedback {
+.form .form-feedback {
     grid-column: 2;
-    grid-row: 4/ span 2;
 }
 
 /* table styling */
 table {
     border: medium solid white;
     border-collapse: collapse;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
 }
 
