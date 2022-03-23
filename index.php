@@ -101,7 +101,9 @@
             <section class="supporting-files">
                 <h3>Supporting files</h3>
                 <p><a href="lab6/css/custom.css">custom.css</a></p>
-                <p><a href="lab6/images/wireframe.png">wireframe</a></p>
+                <p><a href="lab6/images/desktop-wireframe.jpeg">Desktop</a></p>
+                <p><a href="lab6/images/tablet-wireframe.jpeg">Tablet</a></p>
+                <p><a href="lab6/images/phone-wireframe.jpeg">Phone</a></p>
             </section>
 
             <section class="grader-notes">
