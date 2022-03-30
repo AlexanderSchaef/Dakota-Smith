@@ -1,0 +1,73 @@
+/* index */
+main {
+    grid-template-areas: 
+        "page-heading"
+        "section-one" 
+        "section-two" 
+        "section-three"
+        "section-four";
+
+    grid-template-columns: 100%;
+}
+
+.kindness-paragraph {
+    padding: 1em;
+}
+/* details */
+main.details {
+    grid-template-areas: 
+        "page-heading"
+        "section-one"
+        "section-two"
+        "section-three" 
+        "section-four"
+        "section-five"
+        "section-six"
+        "section-seven"
+        "section-eight";
+    grid-template-columns: auto;
+}
+
+.gandhi-image {
+    grid-area: section-three;
+}
+
+.gandhi-text {
+    grid-area: section-four;
+}
+
+.ellen-degeneres-image {
+    grid-area: section-seven;
+}
+
+.ellen-degeneres-text {
+    grid-area: section-eight;
+}
+
+figure {
+    margin: 1em auto;
+}
+
+/* form */
+.form main {
+    grid-template-columns: auto;
+}
+
+.form main:first-child {
+    grid-column: 1;
+}
+
+.form .actual-form {
+    grid-column: 1;
+    max-width: 100%;
+    margin: 5% auto;
+}
+
+.form .form-feedback {
+    grid-column: 1;
+}
+
+.form h2 {
+    padding-top: 20%;
+    text-align: center;
+}
