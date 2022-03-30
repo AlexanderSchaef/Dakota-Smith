@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Acts of Kindness for a Better World</title>
-        <meta name="author" content="Dakota Smith">
-        <meta name="description" content="In the chaos of today's world, 
-        spreading acts of kindness can make a positive impact, learn more here.">
-        <!-- Description is 107 characters, tries to promote a call to action -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/custom.css?version=<?php print time(); ?>" type="text/css">
-        <link rel="stylesheet" media="(max-width: 800px)" href="css/custom-tablet.css?version=<?php print time(); ?>" type="text/css">
-        <link rel="stylesheet" media="(max-width: 600px)" href="css/custom-phone.css?version=<?php print time(); ?>" type="text/css">
-    </head>
-
-    <body class="form">
-        <header>
-            <!-- logo image would go here -->
-            <h1>Spread Kindness</h1>
-            <h2>One Action to Change the World</h2>
-        </header>
-        <nav>
-            <a href="index.php">Home</a>
-            <a href="detail.php">Kind&nbsp;People</a>
-            <a href="form.php">Survey</a>
-        </nav>
+    <?php
+    include 'top.php';
+    ?>
         <section class="header-img">
                 <h2>Why Do You Think We Should be Kind?</h2>
         </section>
@@ -127,11 +104,8 @@
                 <h2>Thank you</h2>
             </section>
         </main>
-
-        <footer>
-            <p><a href="../index.php">Site map (Main index)</a></p>
-        </footer> 
-    </body>
-</html>
+    <?php
+    include 'footer.php';
+    ?>
 
         
