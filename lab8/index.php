@@ -47,29 +47,29 @@
                 <table>
                     <caption>Some Topics to Consider</caption>
                     <tr>
-                        <th></th>
                         <th>Personality</th>
                         <th>Appearance</th>
                         <th>Lifestyle</th>
                     </tr>
+                  
+                    <?php
+                    
+                    $sql = 'SELECT fldPersonality, fldAppearance, fldLifestyle FROM tblComplimentIdeas';
+                    $statement = $pdo->prepare($sql);
+                    $statement->execute();
+
+                    $records = $statement->fetchAll();
+
+                    foreach ($records as $record) {
+                        print "<tr>";
+                        print "<td>" . $record['fldPersonality'] . "</td>";
+                        print "<td>" . $record['fldAppearance'] . "</td>";
+                        print "<td>" . $record['fldLifestyle'] . "</td>";
+                        print "</tr>" . PHP_EOL;
+                    }
+                    ?>
                     <tr>
-                        <td rowspan="3">Compliments</td>
-                        <td>Kindness</td>
-                        <td>Outfit</td>
-                        <td>Doing great</td>
-                    </tr>
-                    <tr>
-                        <td>Intelligence</td>
-                        <td>Hair</td>
-                        <td>Work ethic</td>
-                    </tr>
-                    <tr>
-                        <td>Funny</td>
-                        <td>Smile</td>
-                        <td>Time management</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">Source: <cite><a href="https://www.verywellmind.com/positivity-boosting-compliments-1717559"
+                        <td colspan="3">Source: <cite><a href="https://www.verywellmind.com/positivity-boosting-compliments-1717559"
                         target="_blank">https://www.verywellmind.com/positivity-boosting-compliments-1717559</a></cite></td>
                     </tr>
                 </table>

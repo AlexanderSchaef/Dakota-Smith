@@ -1,5 +1,5 @@
 <?php
-$databaseName = 'DSMITH_13_labs';
+$databaseName = 'DSMITH13_labs';
 $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
 $username = 'dsmith13_writer';
 $password = 'TH64p4sydUk7';
