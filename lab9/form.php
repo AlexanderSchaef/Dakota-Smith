@@ -61,7 +61,7 @@
                     $whyKind = getData('txtWhyKind');
 
                     // validate form
-
+                    $dataIsGood = true;
                     if ($firstName == '') {
                         print('<p class="mistake">Please enter your first name.</p>');
                         $dataIsGood = false;
@@ -74,7 +74,7 @@
                     if ($age == '') {
                         print('<p class="mistake">Please enter your age.</p>');
                         $dataIsGood = false;
-                    } elseif (!verifyAlphaNum($firstName))) {
+                    } elseif (!verifyAlphaNum($age))) {
                         print'<p class="mistake">Your age contains extra characters that are 
                         not allowed. Use only letters, numbers, hyphen, and a space. </p>');
                         $dataIsGood = false;
@@ -134,6 +134,31 @@
                         not allowed. Use only letters, numbers, hyphen, and a space. </p>');
                         $dataIsGood = false;
                     }
+
+                    // save data
+                    if ($dataIsGood) {
+                        try { $sql = 'INSERT INTO tblKindnessForm
+                            (fldFirstName, fldAge, fldEmail, fldBeenBullied, fldBullied, fldFavoriteKindness, 
+                            fldEmpathetic, fldCaring, fldOpenMinded, fldApproachable, fldWhyKind)
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+                            $statement = $pdo->prepare($sql);
+                            $params = array($firstName, $age, $email, $beenBullied, $bullied, 
+                            $favoriteKindness, $empathetic, $caring, $openMinded, $approachable, $whyKind);
+
+                            if ($statement->execute($params)) {
+                                print '<p>Record was successfully saved.</p>';
+                            }
+                            else {
+                                print '<p>Record was NOT successfully saved.</p>';
+                            }    
+                        }
+                        catch (PDOEXCEPTION $e) {
+                            print '<p>Couldn\'t insert the record, please contact someone.</p>';        
+                        }
+                    }
+                }
+                if ($dataIsGood) {
+                    print '<h2>Thank you, your information has been received.</h2>';
                 }
                 ?>
             </section>
