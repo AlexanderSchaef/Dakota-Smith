@@ -3,6 +3,20 @@
 
     $favoriteKindnesses = array('Words of affirmation', 'Acts of service', 'Giving gifts');
 
+    // initialize variables 
+    $dataIsGood = false;
+    $firstName = '';
+    $age = '';
+    $email = '';
+    $beenBullied = 'No';
+    $bullied = 'No';
+    $favoriteKindness = 'Words of affirmation';
+    $empathetic = false;
+    $caring = false;
+    $openMinded = false;
+    $approachable = false;
+    $whyKind = '';
+
     function getData($field) {
         if (!isset($_POST[$field])) {
             $data = "";
@@ -78,7 +92,7 @@
                         $dataIsGood = false;
                     }
 
-                    if ($bullied != 'No' AND $bullied != 'Yes' AND $bullied != 'Prefer not to answer') {
+                    if ($bullied != 'No' AND $bullied != 'Yes' AND $bullied != 'Prefer') {
                         print('<p class="mistake">Please choose an option.</p>');
                         $dataIsGood = false;
                     }
@@ -136,40 +150,50 @@
                         <legend>Contact Information</legend> 
                         <p>
                             <label class="required" for="txtFirstName">First Name</label>
-                            <input id="txtFirstName" maxlength="25" name="txtFirstName" type="text" value required>
+                            <input id="txtFirstName" maxlength="25" name="txtFirstName" type="text" value="<?php print $firstName; ?>" required>
                         </p>
                         <p>
                             <label class="required" for="txtAge">Age</label>
-                            <input id="txtAge" maxlength="3" name="txtAge" type="text" value>
+                            <input id="txtAge" maxlength="3" name="txtAge" type="text" value="<?php print $age; ?>">
                         </p>
                         <p>
                             <label class="required" for="txtEmail">Email</label>
-                            <input id="txtEmail" maxlength="30" name="txtEmail" type="email" value>
+                            <input id="txtEmail" maxlength="30" name="txtEmail" type="email" value="<?php print $email; ?>">
                         </p>
                     </fieldset>    
                     <fieldset class="radio">
                         <legend>Have You Been Bullied?</legend>
                         <p>
-                            <input type="radio" id="radBeenBulliedYes" name="radBeenBullied" value="Yes" required>
+                            <input type="radio" id="radBeenBulliedYes" name="radBeenBullied" value="Yes" required
+                            <?php 
+                                if ($beenBullied == "Yes") print 'checked'; ?>>
                             <label class="radio-field" for="radBeenBulliedYes">Yes</label> 
                         </p> 
                         <p>
-                            <input type="radio" id="radBeenBulliedNo" name="radBeenBullied" value="No" required>
+                            <input type="radio" id="radBeenBulliedNo" name="radBeenBullied" value="No" required 
+                            <?php 
+                                if ($beenBullied == "No") print 'checked'; ?>>
                             <label class="radio-field" for="radBeenBulliedNo">No</label>
                         </p>
                     </fieldset>
                     <fieldset class="radio">
                         <legend>Have You Bullied Someone Else?</legend>
                         <p>
-                            <input type="radio" id="radBulliedYes" name="radBullied" value="Yes" required>
+                            <input type="radio" id="radBulliedYes" name="radBullied" value="Yes" required
+                            <?php 
+                                if ($bullied == "Yes") print 'checked'; ?>>
                             <label class="radio-field" for="radBulliedYes">Yes</label>
                         </p> 
                         <p>
-                            <input type="radio" id="radBulliedNo" name="radBullied" value="No" required>    
+                            <input type="radio" id="radBulliedNo" name="radBullied" value="No" required
+                            <?php 
+                                if ($bullied == "No") print 'checked'; ?>>    
                             <label class="radio-field" for="radBeenBulliedNo">No</label>
                         </p>
                         <p>
-                            <input type="radio" id="radBulliedPrefer" name="radBullied" value="Prefer" required>
+                            <input type="radio" id="radBulliedPrefer" name="radBullied" value="Prefer" required
+                            <?php 
+                                if ($bullied == "Prefer") print 'checked'; ?>>
                             <label class="radio-field" for="radBulliedPrefer">Prefer not to answer</label>
                         </p>  
                     </fieldset>
@@ -177,28 +201,39 @@
                         <legend>Favorite Act of Kindness?</legend>
                         <p>
                             <select id="lstFavoriteKindness" name="lstFavoriteKindness">
-                                <option value="Words of affirmation">Words of affirmation</option>
-                                <option value="Acts of service">Acts of service</option>
-                                <option value="Giving gifts">Giving gifts</option>
+                                <option value="Words of affirmation" <?php 
+                                if ($favoriteKindness == "Words of affirmation") print 'selected'; ?>>Words of affirmation</option>
+                                <option value="Acts of service" <?php 
+                                if ($favoriteKindness == "Acts of service") print 'selected'; ?>>Acts of service</option>
+                                <option value="Giving gifts" <?php 
+                                if ($favoriteKindness == "Giving gifts") print 'selected'; ?>>Giving gifts</option>
                             </select>
                         </p>
                     </fieldset>
                     <fieldset class="checkbox">
                         <legend>Which Words Describe You?</legend>
                         <p>
-                            <input type="checkbox" id="chkEmpathetic" name="chkEmpathetic" value="1">
+                            <input type="checkbox" id="chkEmpathetic" name="chkEmpathetic" value="1"
+                            <?php 
+                                if ($empathetic) print 'checked'; ?>>
                             <label for="chkEmpathetic">Empathetic</label>    
                         </p>
                         <p>
-                            <input type="checkbox" id="chkCaring" name="chkCaring" value="1">
+                            <input type="checkbox" id="chkCaring" name="chkCaring" value="1"
+                            <?php 
+                                if ($caring) print 'checked'; ?>>
                             <label for="chkCaring">Caring</label>    
                         </p>
                         <p>
-                            <input type="checkbox" id="chkOpenMinded" name="chkOpenMinded" value="1">
+                            <input type="checkbox" id="chkOpenMinded" name="chkOpenMinded" value="1"
+                            <?php 
+                                if ($openMinded) print 'checked'; ?>>
                             <label for="chkOpenMinded">Open Minded</label>
                         </p>
                         <p>
-                            <input type="checkbox" id="chkApproachable" name="chkApproachable" value="1">
+                            <input type="checkbox" id="chkApproachable" name="chkApproachable" value="1"
+                            <?php 
+                                if ($approachable) print 'checked'; ?>>
                             <label for="chkApproachable">Approachable</label>    
                         </p>
                     </fieldset>
@@ -206,7 +241,7 @@
                         <legend>Why Do You Think We Should Be Kind?</legend>
                         <p>
                             <label for="txtWhyKind">Tell us what you're thinking</label>
-                            <textarea id="txtWhyKind" name="txtWhyKind" rows="4"></textarea>
+                            <textarea id="txtWhyKind" name="txtWhyKind" rows="4">"<?php print $whyKind; ?>"</textarea>
                         </p>
                     </fieldset>
                     <fieldset class="button">
