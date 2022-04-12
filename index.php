@@ -88,14 +88,48 @@
         <h1>CS 008-<em>OL</em> Spring 2022</h1>
         <h2>Dakota Smith - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+        <p><a href="ADMIN/table-viewer.php?getDatabase=">Table viewer</a></p>
         
+        <section class="grid-layout">
+            <h2 class="header">Lab Nine - Saving forms data.</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="lab9/index.php">index.php</a></p>
+                <p><a href="lab9/detail.php">detail.php</a></p>
+                <p><a href="lab9/form.php">form.php</a></p>
+                <p><a href="lab9/array.php">array.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="lab9/css/custom.css">custom.css</a></p>
+                <p><a href="lab9/css/custom-tablet.css">custom-tablet.css</a></p>
+                <p><a href="lab9/css/custom-phone.css">custom-phone.css</a></p>
+                <p><a href="lab9/footer.php">footer.php</a></p>
+                <p><a href="lab9/header.php">header.php</a></p>
+                <p><a href="lab9/nav.php">nav.php</a></p>
+                <p><a href="lab9/top.php">top.php</a></p>
+                <p><a href="lab9/sql.php">SQL statements</a></p>
+                <p><a href="lab9/images/desktop-wireframe.jpeg">Desktop Wireframe</a></p>
+                <p><a href="lab9/images/tablet-wireframe.jpeg">Tablet Wireframe</a></p>
+                <p><a href="lab9/images/phone-wireframe.jpeg">Phone Wireframe</a></p>
+                <p><a href="lab9/images/records.PNG">records.png</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section> 
+        </section>
+
         <section class="grid-layout">
             <h2 class="header">Lab Eight - Database to display data.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
                 <p><a href="lab8/index.php">index.php</a></p>
                 <p><a href="lab8/detail.php">detail.php</a></p>
-                <p><a href="lab78/form.php">form.php</a></p>
+                <p><a href="lab8/form.php">form.php</a></p>
+                <p><a href="lab8/array.php">array.php</a></p>
             </section>
 
             <section class="supporting-files">
@@ -107,9 +141,11 @@
                 <p><a href="lab8/header.php">header.php</a></p>
                 <p><a href="lab8/nav.php">nav.php</a></p>
                 <p><a href="lab8/top.php">top.php</a></p>
+                <p><a href="lab8/sql.php">SQL statements</a></p>
                 <p><a href="lab8/images/desktop-wireframe.jpeg">Desktop Wireframe</a></p>
                 <p><a href="lab8/images/tablet-wireframe.jpeg">Tablet Wireframe</a></p>
                 <p><a href="lab8/images/phone-wireframe.jpeg">Phone Wireframe</a></p>
+                <p><a href="lab8/images/records.PNG">records.png</a></p>
             </section>
 
             <section class="grader-notes">
