@@ -1,5 +1,16 @@
     <?php
     include 'top.php';
+
+    function getData($field) {
+        if (!isset($_POST[$field])) {
+            $data = "";
+        } 
+        else {
+            $data = trim($_POST[$field]);
+            $data = htmlspecialchars($data);
+        }
+        return $data;
+    }
     ?>
         <section class="header-img">
                 <h2>Why Do You Think We Should be Kind?</h2>
@@ -17,6 +28,23 @@
                 print '<p>Post Array:</p><pre>';
                 print_r($_POST);
                 print '</pre>';
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+                    $firstName = getData('txtFirstName');
+                    $age = getData('txtAge');
+                    $email = getData('txtEmail');
+                    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+                    $beenBullied = getData('radBeenBullied');
+                    $bullied = getData('radBullied');
+                    $favoriteKindness = getData('lstFavoriteKindness');
+                    $empathetic = (int) getData('chkEmpathetic');
+                    $caring = (int) getData('chkCaring');
+                    $openMinded = (int) getData('chkOpenMinded');
+                    $approachable = (int) getData('chkApproachable');
+                    $whyKind = getData('txtWhyKind');
+
+                }
                 ?>
                 <form action="#" id="frmWhyKind" method="POST">
                     <fieldset class="contact">
