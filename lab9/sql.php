@@ -24,6 +24,24 @@
         <pre>
         SELECT fldPersonality, fldAppearance, fldLifestyle FROM tblComplimentIdeas
         </pre>
+
+        <h2>Create table for form</h2>
+        <pre>
+        CREATE TABLE tblKindnessForm (
+            pmkKindnessFormId INT AUTO_INCREMENT PRIMARY KEY,
+            fldFirstName varchar(30),
+            fldAge varchar(3),
+            fldEmail varchar(50),
+            fldBeenBullied varchar(3),
+            fldBullied varchar(15),
+            fldFavoriteKindness varchar(20),
+            fldEmpathetic TINYINT(1),
+            fldCaring TINYINT(1),
+            fldOpenMinded TINYINT(1),
+            fldApproachable TINYINT(1),
+            fldWhyKind text
+        )
+        </pre>
         </main>
     <?php
     include 'footer.php';
