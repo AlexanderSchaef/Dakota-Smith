@@ -1,6 +1,8 @@
     <?php
     include 'top.php';
 
+    $favoriteKindnesses = array('Words of affirmation', 'Acts of service', 'Giving gifts');
+
     function getData($field) {
         if (!isset($_POST[$field])) {
             $data = "";
@@ -11,6 +13,13 @@
         }
         return $data;
     }
+
+    function verifyAlphaNum($testString) {
+        // Check for letters, numbers and dash, period, space and single quote only.
+        // added & ; and # as a single quote sanitized with html entities will have 
+        // this in it bob's will be come bob's
+        return (preg_match ("/^([[:alnum:]]|-|\.| |\'|&|;|#)+$/", $testString));
+    }
     ?>
         <section class="header-img">
                 <h2>Why Do You Think We Should be Kind?</h2>
@@ -20,17 +29,10 @@
                 <cite><a href="https://unsplash.com/photos/rd5uNIUJCF0" target="_blank">Unsplash</a></cite>
                 <h2>Survey</h2>
                 <p>We are collecting information on why people think that we should be kind</p>
-            </section>
-
-            <section class="actual-form">
-                <h2>We are curious about your responses</h2>
                 <?php
-                print '<p>Post Array:</p><pre>';
-                print_r($_POST);
-                print '</pre>';
-
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+                    
+                    // sanitize data
                     $firstName = getData('txtFirstName');
                     $age = getData('txtAge');
                     $email = getData('txtEmail');
@@ -44,7 +46,90 @@
                     $approachable = (int) getData('chkApproachable');
                     $whyKind = getData('txtWhyKind');
 
+                    // validate form
+
+                    if ($firstName == '') {
+                        print('<p class="mistake">Please enter your first name.</p>');
+                        $dataIsGood = false;
+                    } elseif (!verifyAlphaNum($firstName))) {
+                        print'<p class="mistake">Your first name contains extra characters that are 
+                        not allowed. Use only letters, numbers, hyphen, and a space. </p>');
+                        $dataIsGood = false;
+                    }
+
+                    if ($age == '') {
+                        print('<p class="mistake">Please enter your age.</p>');
+                        $dataIsGood = false;
+                    } elseif (!verifyAlphaNum($firstName))) {
+                        print'<p class="mistake">Your age contains extra characters that are 
+                        not allowed. Use only letters, numbers, hyphen, and a space. </p>');
+                        $dataIsGood = false;
+                    }
+
+                    if ($email == '') {
+                        print('<p class="mistake">Please enter your email.</p>');
+                        $dataIsGood = false;
+                    else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        echo "Email address is not valid.";
+                    }
+
+                    if ($beenBullied != 'No' AND $beenBullied != 'Yes') {
+                        print('<p class="mistake">Please choose an option.</p>');
+                        $dataIsGood = false;
+                    }
+
+                    if ($bullied != 'No' AND $bullied != 'Yes' AND $bullied != 'Prefer not to answer') {
+                        print('<p class="mistake">Please choose an option.</p>');
+                        $dataIsGood = false;
+                    }
+
+                    if ($favoriteKindness == '') {
+                        print('<p class="mistake">Please choose a favorite act of kindness</p>');
+                        $dataIsGood = false;
+                    } 
+                    elseif (!in_array($favoriteKindness, $favoriteKindnesses)) {
+                        print('<p class="mistake">Please choose a favorite act of kindness</p>');
+                        $dataIsGood = false;
+                    }
+
+                    $totalChecked = 0;
+
+                    if ($empathetic != 1) $empathetic = 0;
+                    $totalChecked += $empathetic;
+
+                    if ($caring != 1) $caring = 0;
+                    $totalChecked += $caring;
+
+                    if ($openMinded != 1) $openMinded = 0;
+                    $totalChecked += $openMinded;
+
+                    if ($approachable != 1) $approachable = 0;
+                    $totalChecked += $approachable;
+
+                    if ($totalChecked == 0) {
+                        print '<p class="mistake">Please choose at least one checkbox
+                        that describes you.</p>';
+                        $dataIsGood = false;
+                    }
+
+                    if ($whyKind == '') {
+                        print('<p class="mistake">Please enter why you think we should be kind.</p>');
+                        $dataIsGood = false;
+                    } elseif (!verifyAlphaNum($whyKind))) {
+                        print'<p class="mistake">Your answer contains extra characters that are 
+                        not allowed. Use only letters, numbers, hyphen, and a space. </p>');
+                        $dataIsGood = false;
+                    }
                 }
+                ?>
+            </section>
+
+            <section class="actual-form">
+                <h2>We are curious about your responses</h2>
+                <?php
+                print '<p>Post Array:</p><pre>';
+                print_r($_POST);
+                print '</pre>';
                 ?>
                 <form action="#" id="frmWhyKind" method="POST">
                     <fieldset class="contact">
