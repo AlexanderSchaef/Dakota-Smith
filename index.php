@@ -91,6 +91,38 @@
         <p><a href="ADMIN/table-viewer.php?getDatabase=">Table viewer</a></p>
         
         <section class="grid-layout">
+            <h2 class="header">Final</h2>
+            <section class="public-files">
+                <h3>Public Files</h3>
+                <p><a href="final/index.php">index.php</a></p>
+                <p><a href="final/detail.php">detail.php</a></p>
+                <p><a href="final/form.php">form.php</a></p>
+                <p><a href="final/array.php">array.php</a></p>
+            </section>
+
+            <section class="supporting-files">
+                <h3>Supporting files</h3>
+                <p><a href="final/css/custom.css">custom.css</a></p>
+                <p><a href="final/css/custom-tablet.css">custom-tablet.css</a></p>
+                <p><a href="final/css/custom-phone.css">custom-phone.css</a></p>
+                <p><a href="final/footer.php">footer.php</a></p>
+                <p><a href="final/header.php">header.php</a></p>
+                <p><a href="final/nav.php">nav.php</a></p>
+                <p><a href="final/top.php">top.php</a></p>
+                <p><a href="final/sql.php">SQL statements</a></p>
+                <p><a href="final/images/desktop-wireframe.jpeg">Desktop Wireframe</a></p>
+                <p><a href="final/images/tablet-wireframe.jpeg">Tablet Wireframe</a></p>
+                <p><a href="final/images/phone-wireframe.jpeg">Phone Wireframe</a></p>
+                <p><a href="final/images/records.PNG">records.png</a></p>
+            </section>
+
+            <section class="grader-notes">
+                <h3>Notes to grader</h3>
+                <p></p>
+            </section> 
+        </section>
+
+        <section class="grid-layout">
             <h2 class="header">Lab Nine - Saving forms data.</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
